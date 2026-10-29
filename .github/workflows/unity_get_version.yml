@@ -1,12 +1,9 @@
-- name: Get Unity Version
-  uses: Appegy/unity-version-action@v1.1.0
+- name: Get Unity version
+  uses: Appegy/unity-version-action@v1.1.0u
+  id: unity-version
 
 - name: Checkout project
   uses: actions/checkout@v4
-
-- name: Get Unity version
-  id: unity-version
-  uses: appegy/unity-version-action@v1   
 
 - name: Prepare build matrix
   run: |
