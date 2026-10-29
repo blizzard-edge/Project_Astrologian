@@ -1,0 +1,2 @@
+- name: Unity Pack
+  uses: quabug/unity-pack@v2
