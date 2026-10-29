@@ -22,5 +22,5 @@ jobs:
       - name: Annotate
         uses: JetBrains/ReSharper-InspectCode@v0.14
         with:
-          solution: ./YourSolution.sln
+          solution: ${{ steps.find-sln.outputs.solution }}
           upload-sarif: false
