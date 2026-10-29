@@ -3,6 +3,7 @@
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
 with:
   unityVersion: 2019.2.11f1 #Version of unity to use for creating the project.
   projectPath: ./myProject #Relative path to the project to be built.
