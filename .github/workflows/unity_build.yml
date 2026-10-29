@@ -1,8 +1,6 @@
 - name: Build Unity
   uses: kuler90/build-unity@v1.0.5
   
-  name: Build project
-  
   on: [push, pull_request]
   
   jobs:
