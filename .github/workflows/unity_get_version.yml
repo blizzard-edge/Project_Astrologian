@@ -1,13 +1,21 @@
-- name: Get Unity version
-  uses: Appegy/unity-version-action@v1.1.0u
-  id: unity-version
+name: Get Unity version
 
-- name: Checkout project
-  uses: actions/checkout@v4
+on: workflow_dispatch
 
-- name: Prepare build matrix
-  run: |
-    echo "[Env] Version = $UNITY_VERSION"
-    echo "[Env] Changeset = $UNITY_VERSION_CHANGESET"
-    echo "[Env] Version = ${{ steps.unity-version.outputs.unity-version }}"
-    echo "[Env] Changeset = ${{ steps.unity-version.outputs.unity-version-changeset }}"
+jobs:
+  get-unity-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Unity version
+        uses: Appegy/unity-version-action@v1.1.0u
+        id: unity-version
+
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Prepare build matrix
+        run: |
+          echo "[Env] Version = $UNITY_VERSION"
+          echo "[Env] Changeset = $UNITY_VERSION_CHANGESET"
+          echo "[Env] Version = ${{ steps.unity-version.outputs.unity-version }}"
+          echo "[Env] Changeset = ${{ steps.unity-version.outputs.unity-version-changeset }}"

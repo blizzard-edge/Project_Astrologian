@@ -1,7 +1,18 @@
-- name: Unity Pack
-  uses: quabug/unity-pack@v2
+name: Unity Pack
 
-with:
-  package-dir: '' #Required directory path of unity package relative to unity project directory
-  output-path: '' #Path of .unitypackage file
-  project-dir: '' #Directory of unity project
+on:
+  workflow_dispatch:
+
+jobs:
+  unity-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Unity Pack
+        uses: quabug/unity-pack@v2
+        with:
+          package-dir: '' # Required directory path relative to the Unity project directory
+          output-path: '' # Path of the .unitypackage file
+          project-dir: '' # Directory of the Unity project

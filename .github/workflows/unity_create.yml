@@ -1,9 +1,16 @@
-- name: Unity - Create
-  uses: jbltx/unity-create@v1.2
+name: Unity - Create
 
-env:
-  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+on:
+  workflow_dispatch:
 
-with:
-  unityVersion: 2019.2.11f1 #Version of unity to use for creating the project.
-  projectPath: ./myProject #Relative path to the project to be built.
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unity - Create
+        uses: jbltx/unity-create@v1.2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          unityVersion: '2019.2.11f1'
+          projectPath: ./myProject
