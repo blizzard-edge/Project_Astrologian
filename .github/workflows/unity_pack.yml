@@ -1,2 +1,7 @@
 - name: Unity Pack
   uses: quabug/unity-pack@v2
+
+with:
+  package-dir: '' #Required directory path of unity package relative to unity project directory
+  output-path: '' #Path of .unitypackage file
+  project-dir: '' #Directory of unity project
