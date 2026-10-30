@@ -12,7 +12,7 @@ namespace Project_Astrologian
         public void ReactToPlayer()
         {
             UnityEngine.Debug.Log(
-                "Asterion responds cautiously."
+                $"{Name} responds cautiously."
             );
         }
     }

@@ -5,13 +5,13 @@ namespace Project_Astrologian
     public abstract class Character
     {
         // Unique identifier for the character.
-        public string Id { get; protected set; }
+        public string ID { get; protected set; }
         public string Name { get; protected set; }
 
         // Constructor to initialize a character with an ID and name.
         protected Character(string id, string name)
         {
-            Id = id;
+            ID = id;
             Name = name;
         }
 
@@ -19,7 +19,7 @@ namespace Project_Astrologian
         public virtual void Talk()
         {
             UnityEngine.Debug.Log(
-                Name + " has nothing to say right now."
+                $"{Name} has nothing to say right now."
             );
         }
     }

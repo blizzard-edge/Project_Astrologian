@@ -19,6 +19,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Find solution
+        id: find-sln
+        shell: pwsh
+        run: |
+          $solution = Get-ChildItem -Path . -Filter '*.sln' -Recurse | Select-Object -First 1
+          if (-not $solution) { throw 'No solution file found.' }
+          "solution=$($solution.FullName)" >> $env:GITHUB_OUTPUT
       - name: Annotate
         uses: JetBrains/ReSharper-InspectCode@v0.14
         with:
