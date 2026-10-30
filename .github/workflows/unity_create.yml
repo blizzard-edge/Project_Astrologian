@@ -5,7 +5,7 @@ on:
 
 jobs:
   create:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Unity - Create
         uses: jbltx/unity-create@v1.2
