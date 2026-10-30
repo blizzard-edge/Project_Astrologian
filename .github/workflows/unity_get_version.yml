@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   get-unity-version:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get Unity version
         uses: Appegy/unity-version-action@v1.1.0u
