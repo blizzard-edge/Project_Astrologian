@@ -7,8 +7,10 @@
 
 namespace Project_Astrologian
 {
-    // Abstract base class representing a character in the game.
-    // Provides shared properties and behavior for character types.
+    /* 
+    * Abstract base class representing a character in the game.
+    * Provides shared properties and behavior for character types.
+    */
     public abstract class Character
     {
         // Unique identifier for the character.
