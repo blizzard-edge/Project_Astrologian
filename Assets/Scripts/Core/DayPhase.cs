@@ -1,8 +1,16 @@
+/*
+* Author: Caitlin Hagler
+* Class: DayPhase
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
-    // Defines the different stages of a gameplay day.
-    // Used to track the player's progression through the daily cycle.
-
+    /*
+    * Defines the different stages of a gameplay day.
+    * Used to track the player's progression through the daily cycle.
+    */
     public enum DayPhase
     {
         // Moon phase and tarot draw.
