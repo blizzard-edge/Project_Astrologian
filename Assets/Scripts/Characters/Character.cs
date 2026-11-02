@@ -1,3 +1,10 @@
+/*
+* Author: Caitlin Hagler
+* Class: Character
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
     // Abstract base class representing a character in the game.
