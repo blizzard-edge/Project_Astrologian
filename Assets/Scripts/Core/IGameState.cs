@@ -1,8 +1,17 @@
+/*
+* Author: Caitlin Hagler
+* Class: IGameState
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
-    // Defines the common interface for all gameplay states.
-    // Implemented by individual states to control their entry,
-    // execution, and exit behavior.
+    /*
+    * Defines the common interface for all gameplay states.
+    * Implemented by individual states to control their entry,
+    * execution, and exit behavior.
+    */
     public interface IGameState
     {
         void Enter(GameManager manager);
