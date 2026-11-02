@@ -1,10 +1,19 @@
 using System;
 using System.Collections.Generic;
 
+/*
+* Author: Caitlin Hagler
+* Class: GameState
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
-    // Stores the current playthrough's data, including player information,
-    // progression, resources, stats, inventory, and story progress.
+    /*
+    * Stores the current playthrough's data, including player information,
+    * progression, resources, stats, inventory, and story progress.
+    */
     [Serializable]
     public class GameState
     {
