@@ -1,7 +1,16 @@
+/*
+* Author: Caitlin Hagler
+* Class: Witch
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
-    // Represents the player-controlled witch.
-    // Stores the player's chosen name, pronouns, and stats.
+    /*
+    * Represents the player-controlled witch.
+    * Stores the player's chosen name, pronouns, and stats.
+    */
     public class Witch : Character
     {
         // The player's chosen pronouns (e.g., "she/her", "he/him", "they/them").
