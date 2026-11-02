@@ -1,6 +1,6 @@
 /*
 * Author: Caitlin Hagler
-* Class: CFriendlyState
+* Class: FriendlyState
 * IDE: VSCode
 * Last Revision Date: November 2, 2026
 */
