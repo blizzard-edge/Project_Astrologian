@@ -1,9 +1,18 @@
 using System.Collections.Generic;
 
+/*
+* Author: Caitlin Hagler
+* Class: LoveInterest
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
-    // Represents a romantic or relationship character.
-    // Stores affection points, gift preferences, and relationship state.
+    /*
+    * Represents a romantic or relationship character.
+    * Stores affection points, gift preferences, and relationship state.
+    */
     public class LoveInterest : Character
     {
         // The current affection points the player has with this character.
@@ -23,8 +32,10 @@ namespace Project_Astrologian
             RelationshipState = new NeutralState();
         }
 
-        // Processes a gift received from the player.
-        // Gift potions increase affection according to their effect value.
+        /*
+        * Processes a gift received from the player.
+        * Gift potions increase affection according to their effect value.
+        */
         public void ReceiveGift(Item item)
         {
             if (item is Potion potion && potion.IsGiftPotion)
