@@ -1,3 +1,10 @@
+/*
+* Author: Caitlin Hagler
+* Class: Shopkeeper
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
     // Represents the NPC responsible for operating the ingredient shop.
