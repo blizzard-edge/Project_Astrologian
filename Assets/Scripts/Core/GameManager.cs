@@ -1,9 +1,18 @@
 using UnityEngine;
 
+/*
+* Author: Caitlin Hagler
+* Class: GameManager
+* IDE: VSCode
+* Last Revision Date: November 2, 2026
+*/
+
 namespace Project_Astrologian
 {
-    // Singleton responsible for managing the overall game,
-    // including game data and transitions between gameplay states.
+    /*
+    * Singleton responsible for managing the overall game,
+    * including game data and transitions between gameplay states.
+    */
     public class GameManager : MonoBehaviour
     {
         // Provides a globally accessible reference to the GameManager.
@@ -29,8 +38,10 @@ namespace Project_Astrologian
             ChangeState(new MainMenuState());
         }
 
-        // Changes the current gameplay state.
-        // Exits the previous state before entering the new one.
+        /*
+        * Changes the current gameplay state.
+        * Exits the previous state before entering the new one.
+        */
         public void ChangeState(IGameState newState)
         {
             if (newState == null) return;
@@ -70,8 +81,10 @@ namespace Project_Astrologian
         }
 
 
-        // Advances the game to the next day.
-        // Transitions to the cliffhanger after the seventh day.
+        /*
+        * Advances the game to the next day.
+        * Transitions to the cliffhanger after the seventh day.
+        */
         public void AdvanceDay()
         {
             if (State.CurrentDay >= 7)
